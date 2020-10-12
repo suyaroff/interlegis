@@ -1,0 +1,682 @@
+body {
+  background: url("i/interlegis/body-bg.png");
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 30px;
+  margin: 0px 0px 10px 0px;
+  color: #000000;
+}
+h2 {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0px 0px 10px 0px;
+  color: #000000;
+}
+h3 {
+  color: #e31e24;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 10px 0px;
+}
+
+a {
+  color: #231eff;
+}
+
+table,
+td,
+tr {
+  margin: 0px;
+  padding: 0px;
+  border-collapse: collapse;
+}
+img {
+  border: 0px;
+}
+
+#header {
+  height: 90px;
+  position: relative;
+}
+
+#header .logo {
+  position: absolute;
+  background: url("i/interlegis/logo.png") no-repeat;
+  width: 277px;
+  height: 75px;
+  top: 15px;
+  left: 10px;
+}
+
+#header .social {
+  position: absolute;
+  top: 42px;
+  left: 328px;
+}
+
+#header .phone {
+  position: absolute;
+  top: 18px;
+  font-size: 24px;
+  color: #000000;
+  line-height: 20px;
+  padding: 2px 0px 0px 23px;
+  background: url("i/interlegis/icons/phone.png") no-repeat left top;
+}
+
+#header .phone .work-time {
+  position: absolute;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  right: 0px;
+  top: 30px;
+}
+
+#header .call-ask-box {
+  position: absolute;
+  top: 47px;
+  right: 10px;
+}
+
+#header .call-ask-box .link-button {
+  display: block;
+  color: #555555;
+  line-height: 20px;
+  text-align: right;
+}
+
+#menu {
+  width: 100%;
+}
+#menu .left-border,
+#menu .right-border {
+  background: url("i/interlegis/menu/left.png") no-repeat;
+  width: 35px;
+  height: 51px;
+}
+#menu .right-border {
+  background: url("i/interlegis/menu/right.png") no-repeat right top;
+}
+#menu .mid {
+  background: url("i/interlegis/menu/bg.png") repeat-x left bottom;
+  padding-top: 9px;
+}
+#menu .items {
+  width: 100%;
+}
+#menu .items td {
+  height: 42px;
+  text-align: center;
+}
+#menu .items td a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+#menu .items td a:hover {
+  text-decoration: none;
+}
+#menu .items td.separator {
+  background: url("i/interlegis/menu/separator.png") no-repeat;
+  width: 2px;
+  overflow: hidden;
+}
+#menu .items td.current {
+  background: url("i/interlegis/menu/current-bg.png") repeat-x;
+}
+
+#submenu {
+  width: 100%;
+}
+#submenu .left-border,
+#submenu .right-border {
+  background: url("i/interlegis/menu/sub-left.png") no-repeat left top;
+  width: 40px;
+  height: 43px;
+}
+#submenu .items {
+  width: 100%;
+  text-align: center;
+}
+#submenu .items .separator {
+  /*	background: url("i/interlegis/menu/sub-separator.png") no-repeat center top;*/
+  height: 43px;
+  width: 2px;
+  overflow: hidden;
+  font-size: 1px;
+}
+#submenu .items .item {
+  position: relative;
+  height: 100%;
+  line-height: 42px;
+  z-index: 999;
+  background: url("i/interlegis/menu/sub-separator.png") no-repeat left top;
+}
+#submenu .items .item.first {
+  background: none;
+}
+#submenu .items .item .num {
+  color: #e31e24;
+  font-size: 14px;
+  line-height: 18px;
+}
+#submenu .items .item a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+#submenu .items .item a:hover {
+  text-decoration: none;
+}
+#submenu .items .item .arrow {
+  background: url("i/interlegis/menu/arrow-black-down.png") no-repeat center 9px;
+  cursor: pointer;
+  padding: 0px 4px;
+}
+#submenu .items .item .sub-list {
+  position: absolute;
+  top: 42px;
+  left: 1px;
+  width: 100%;
+  z-index: 300;
+  background: url("i/interlegis/menu/shadow-bottom.png") repeat-x bottom;
+  padding-bottom: 4px;
+  display: none;
+}
+#submenu .items .item.expanded {
+  background: url("i/interlegis/menu/sub-item-bg-top.png") no-repeat top left;
+}
+#submenu .items .expanded .sub-list {
+  display: block;
+}
+#submenu .items .item .sub-list .bg {
+  background: #d2d2d2 url("i/interlegis/menu/sub-item-bg.png") repeat-x -42px 0px;
+  line-height: 14px;
+  text-align: left;
+  border-left: 1px solid #b5b5b5;
+  border-right: 1px solid #b5b5b5;
+  padding: 0px 9px 9px 9px;
+  position: relative;
+}
+#submenu .items .item .sub-list .bg a {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  padding: 4px 0px 4px 9px;
+  background: url("i/interlegis/square-red.png") no-repeat 0px 10px;
+}
+
+#submenu .right-border {
+  background: url("i/interlegis/menu/sub-right.png") no-repeat right top;
+}
+#submenu .mid {
+  background: url("i/interlegis/menu/sub-mid.png") repeat-x;
+}
+
+#subshadow {
+  width: 100%;
+  font-size: 1px;
+}
+#subshadow .left {
+  background: url("i/interlegis/menu/shadow-left.png") no-repeat left top;
+  width: 400px;
+  height: 13px;
+}
+#subshadow .mid {
+  background: url("i/interlegis/menu/shadow-mid.png") repeat-x;
+  height: 13px;
+}
+#subshadow .right {
+  background: url("i/interlegis/menu/shadow-right.png") no-repeat right top;
+  width: 400px;
+  height: 13px;
+}
+#subbox {
+  width: 100%;
+}
+#subbox .top-left {
+  background: url("i/interlegis/menu/sub-box-top-left.png") repeat-y;
+  width: 35px;
+}
+#subbox .top-right {
+  background: url("i/interlegis/menu/sub-box-top-right.png") repeat-y;
+  width: 35px;
+}
+#subbox .top-mid {
+  background: #f7f6e2;
+}
+#subbox .bottom-left {
+  background: url("i/interlegis/menu/sub-box-bottom-left.png") no-repeat;
+  width: 35px;
+  height: 25px;
+}
+#subbox .bottom-right {
+  background: url("i/interlegis/menu/sub-box-bottom-right.png") no-repeat;
+  width: 35px;
+  height: 25px;
+}
+#subbox .bottom-mid {
+  background: url("i/interlegis/menu/sub-box-bottom-mid.png") repeat-x;
+  height: 25px;
+}
+
+#content {
+  width: 100%;
+}
+#content .left-border {
+  width: 35px;
+  background: url("i/interlegis/content/border-left.png") repeat-y left top;
+}
+#content .right-border {
+  width: 35px;
+  background: url("i/interlegis/content/border-right.png") repeat-y right top;
+}
+#content .border-bottom-left {
+  font-size: 1px;
+  width: 35px;
+  height: 20px;
+  background: url("i/interlegis/content/bottom-left.png") no-repeat left top;
+}
+#content .border-bottom-right {
+  font-size: 1px;
+  width: 35px;
+  height: 20px;
+  background: url("i/interlegis/content/bottom-right.png") no-repeat right top;
+}
+#content .border-bottom-mid {
+  font-size: 1px;
+  height: 20px;
+  background: url("i/interlegis/content/bottom-mid.png") repeat-x left top;
+}
+
+#content .left-col {
+  padding: 16px 0px 0px 0px;
+  width: 218px !important;
+  vertical-align: top;
+}
+
+#content .right-col {
+  padding: 16px 0px 0px 0px;
+  vertical-align: top;
+}
+
+#footer {
+  width: 100%;
+}
+#footer td {
+  color: #555555;
+  font-size: 14px;
+  line-height: 22px;
+  vertical-align: top;
+}
+#footer h2 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  margin: 0px 0px 5px 0px;
+  padding: 1px 0px 0px 0px;
+}
+#footer .clock {
+  width: 60px;
+  background: url("i/interlegis/icons/clock.png") no-repeat 29px 1px;
+}
+#footer .work-time {
+  width: 150px;
+}
+#footer .contacts {
+  width: 170px;
+}
+#footer .separator {
+  background: url("i/interlegis/footer-separator.png") no-repeat center center;
+}
+#footer .phone {
+  background: url("i/interlegis/icons/phone.png") no-repeat left top;
+  width: 25px;
+}
+#footer .links {
+  line-height: 25px;
+  width: 190px;
+}
+#footer .links a {
+  background: url("i/interlegis/square-grey.png") no-repeat left center;
+  padding-left: 9px;
+  color: #555555;
+}
+#footer .logo {
+  background: url("i/interlegis/footer-logo.png") no-repeat 0px 1px;
+  width: 66px;
+}
+
+#slides {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+#slides .control-pan {
+  background: url("i/interlegis/opacity30.png");
+  height: 44px;
+  position: absolute;
+  width: 100%;
+  top: 199px;
+  left: 0px;
+  z-index: 200;
+}
+#slides .slides_container {
+  width: 706px;
+  height: 241px;
+  overflow: hidden;
+  position: relative;
+  display: none;
+  z-index: 100;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+#slides .slides_container a {
+  width: 706px;
+  height: 241px;
+  display: block;
+}
+
+#slides .slides_container a img {
+  display: block;
+}
+
+#slides .next,
+#slides .prev {
+  background: url("i/interlegis/slides/arrow-prev.png") no-repeat;
+  position: absolute;
+  top: 207px;
+  left: 20px;
+  width: 12px;
+  height: 26px;
+  display: block;
+  z-index: 300;
+}
+
+#slides .next {
+  left: 673px;
+  background: url("i/interlegis/slides/arrow-next.png") no-repeat;
+}
+
+#slides .pagination {
+  position: absolute;
+  top: 217px;
+  left: 300px;
+  z-index: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+#slides .slides_control {
+  position: absolute;
+  height: 241px;
+}
+#slides .pagination li {
+  float: left;
+  margin: 0 3px;
+  list-style: none;
+}
+
+#slides .pagination li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url("i/interlegis/slides/pagination.png");
+  background-position: 0 -20px;
+  float: left;
+  overflow: hidden;
+  font-size: 0px;
+}
+
+#slides .pagination li.current a {
+  background-position: 0 0;
+}
+
+.banners {
+  width: 100%;
+  margin-top: 5px;
+}
+.banners td {
+  width: 218px;
+}
+.banners a {
+  position: relative;
+  display: block;
+}
+.banners a span {
+  position: absolute;
+  left: 21px;
+  top: 70px;
+  color: #000000;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.box-grey {
+  background: url("i/interlegis/box-grey.png") repeat-y right;
+}
+.box-grey .top {
+  background: url("i/interlegis/box-grey.png") no-repeat left top;
+  height: 10px;
+  font-size: 1px;
+}
+.box-grey .mid {
+  padding: 0px 10px;
+}
+.box-grey .bottom {
+  background: url("i/interlegis/box-grey.png") no-repeat left bottom;
+  height: 10px;
+  font-size: 1px;
+}
+.box-grey2 {
+  background: url("i/interlegis/box-grey2.png") repeat-y right;
+}
+.box-grey2 .top {
+  background: url("i/interlegis/box-grey2.png") no-repeat left top;
+  height: 10px;
+  font-size: 1px;
+}
+.box-grey2 .mid {
+  padding: 0px 10px;
+}
+.box-grey2 .bottom {
+  background: url("i/interlegis/box-grey2.png") no-repeat left bottom;
+  height: 10px;
+  font-size: 1px;
+}
+
+.categories h2 {
+  margin: 0px;
+  padding: 0px;
+}
+.categories .item {
+  font-size: 15px;
+  color: #e31e24;
+  font-weight: bold;
+  padding: 6px 0px 6px 0px;
+  margin: 0px 0px 0px 11px;
+  display: block;
+}
+.categories .subitem {
+  color: #231eff;
+  font-size: 14px;
+  display: block;
+  background: url("i/interlegis/square-red.png") no-repeat 0px 11px;
+  padding: 4px 0px 4px 9px;
+  margin-left: 11px;
+}
+
+.news-box h2 {
+  margin: 0px;
+}
+.news-box a {
+  display: block;
+  color: #231eff;
+  font-size: 14px;
+  padding: 0px 0px 3px 11px;
+  margin: 0px 0px 0px -11px;
+  background: url("i/interlegis/square-red.png") no-repeat 0px 8px;
+}
+.news-box p {
+  color: #e31e24;
+  padding: 0px 0px 10px 11px;
+  margin: 0px;
+  font-size: 12px;
+}
+.reg-offshore,
+.buy-offshore {
+  display: block;
+  background: url("i/interlegis/icons/register-offshore.png") no-repeat;
+  color: #000000;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0px 0px 0px 19px;
+  padding: 2px 0px 6px 44px;
+}
+.buy-offshore {
+  background: url("i/interlegis/icons/buy-offshore.png") no-repeat;
+}
+
+.clear {
+  clear: both;
+  font-size: 0px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.product-list {
+  width: 100%;
+}
+.product-list .title {
+  background: url("i/interlegis/table-title-mid.png") repeat-x;
+
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0px;
+}
+.product-list .title td {
+  height: 27px;
+  padding: 0px;
+  border: none;
+}
+.product-list .title .left {
+  background: url("i/interlegis/table-title-left.png") no-repeat;
+  width: 9px;
+  font-size: 0px;
+}
+.product-list .title .right {
+  background: url("i/interlegis/table-title-right.png") no-repeat;
+  width: 9px;
+  font-size: 0px;
+}
+.product-list td {
+  text-align: left;
+  font-size: 12px;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 12px 0px 12px 0px;
+}
+
+.nav-pagination {
+  font-weight: bold;
+}
+.nav-pagination .delimetr {
+  float: left;
+  line-height: 23px;
+  text-align: center;
+  width: 23px;
+}
+.nav-pagination .prev,
+.nav-pagination .next {
+  float: left;
+  margin-top: 1px;
+  height: 21px;
+  width: 23px;
+}
+.nav-pagination .next {
+  margin-right: 2px;
+  background: url("i/prevnext.png") no-repeat left bottom;
+}
+.nav-pagination .prev {
+  margin-right: 6px;
+  background: url("i/prevnext.png") no-repeat left top;
+}
+.nav-pagination .page-num {
+  color: #000000;
+  font-size: 12px;
+  float: left;
+  height: 23px;
+  width: 23px;
+  line-height: 23px;
+  margin-right: 2px;
+  text-align: center;
+}
+.nav-pagination .page-num:hover {
+  text-decoration: none;
+}
+.nav-pagination .page-num.active {
+  background: #e31e24;
+  color: #ffffff;
+  cursor: default;
+  text-decoration: none;
+}
+.nav-pagination .show-all {
+  color: #000000;
+  font-size: 12px;
+  float: left;
+  line-height: 23px;
+  margin-left: 13px;
+  margin-right: 60px;
+  text-decoration: underline;
+}
+.nav-pagination .show-all.active {
+  color: #000000;
+  cursor: default;
+  text-decoration: none;
+}
+
+.product-detail {
+  width: 100%;
+}
+.product-detail .product-image {
+  border: 1px solid #cfcfcf;
+  padding: 4px;
+}
+.product-detail .cost {
+  font-size: 30px;
+  color: #999999;
+  line-height: 35px;
+  vertical-align: top;
+}
+.product-detail .buy {
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0px 0px 0px 5px;
+  vertical-align: top;
+  padding: 0px 15px;
+}
+.product-detail .options {
+  border: 1px solid #cfcfcf;
+  background: #f7f7f7;
+  padding: 3px 9px;
+  margin: 19px 0px 0px 0px;
+}
+.product-detail .options table {
+  width: 100%;
+}
+.product-detail .options table td {
+  padding: 6px 0px;
+  border-bottom: 1px dotted #cfcfcf;
+}
